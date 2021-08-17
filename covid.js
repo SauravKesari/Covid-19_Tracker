@@ -3,11 +3,11 @@ const btn=document.querySelector(".searchButton");
 btn.addEventListener("click",updateData);
 function updateData(){
     const search=document.getElementById("searchtext").value;
-    alert(search);
+    
     fetch("https://api.covid19api.com/summary")
     .then(response => response.json())
     .then(rsp => {
-        console.log(rsp.Countries);
+    console.log(rsp.Countries);
         rsp.Countries.forEach(element => {
             if(element.Country==search){
                 document.getElementById("country").innerHTML=element.Country;
