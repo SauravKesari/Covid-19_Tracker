@@ -27,6 +27,7 @@ body::before {
   background-color: #fff;
   bottom: 0;
 }
+/* Search bar design */
 .search {
   z-index: 1;
   width: 100%;
@@ -54,6 +55,7 @@ body::before {
   cursor: pointer;
   font-size: 20px;
 }
+/* Card with Body design */
 .container {
   z-index: 1;
   width: 70%;
@@ -109,6 +111,7 @@ span {
 .newrecover {
   background: #ff4c29;
 }
+/* Responsive design  */
 @media screen and (max-width: 768px) {
   .board {
     column-count: 2;
