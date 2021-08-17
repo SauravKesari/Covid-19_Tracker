@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid-19 Application</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="search">
+      <input
+        type="text"
+        class="searchTerm"
+        id="searchtext"
+        placeholder="Search Country..."
+      />
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+
+    <div class="container">
+      <h2>
+        Covid-19 Cases in
+        <span id="country" style="color: black; font-size: 25px"></span>
+      </h2>
+      <div class="board">
+        <div class="card newcases">
+          <i class="fa fa-tachometer"></i>
+          <h5>New Confirmed</h5>
+          <span id="nc"></span>
+        </div>
+        <div class="card newdeath">
+          <i class="fa fa-times"></i>
+          <h5>New Deaths</h5>
+          <span id="nd"></span>
+        </div>
+        <div class="card newrecover">
+          <i class="fa fa-heart"></i>
+          <h5>New Recovered</h5>
+          <span id="nr"></span>
+        </div>
+        <div class="card totalcase">
+          <i class="fa fa-tachometer"></i>
+          <h5>Total Confirmed</h5>
+          <span id="tc"></span>
+        </div>
+        <div class="card totaldeath">
+          <i class="fa fa-times"></i>
+          <h5>Total Deaths</h5>
+          <span id="td"></span>
+        </div>
+        <div class="card totalrecover">
+          <i class="fa fa-heart"></i>
+          <h5>Total Recovered</h5>
+          <span id="tr"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="covid.js"></script>
+</html>
